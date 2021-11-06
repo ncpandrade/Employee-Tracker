@@ -12,9 +12,10 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+  
 //add READ route for department table
 // Get all departments
-router.get('/departments', (req, res) => {
+app.get('/', (req, res) => {
     const sql = `SELECT * FROM departments`;
 
     db.query(sql, (err, rows) => {
@@ -28,6 +29,8 @@ router.get('/departments', (req, res) => {
         });
     });
 });
+
+
 
 // Default response for any other request (Not Found)
 app.use((req, res) => {

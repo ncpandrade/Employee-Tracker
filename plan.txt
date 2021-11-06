@@ -1,0 +1,17 @@
+--what do you want to do?
+    --view something
+        --show the thing; ask again what do you want to do?
+    --add/ update something 
+        --need info on what user wants to add +/ update
+        --make add or update
+        --ask again what do you want to do
+
+    main function -> asks what do you want to do
+
+    view functions -> show thing you want to see
+
+    update functions -> get indentifier for the item , the info to be updated, make update
+
+    add functions -> get the info for the item to be added, add the item
+
+    
