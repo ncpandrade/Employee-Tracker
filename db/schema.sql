@@ -10,7 +10,7 @@ CREATE TABLE roles (
   title VARCHAR(30) NOT NULL,
   salary DECIMAL (10,2) NOT NULL,
   department_id INTEGER,
-  -- Sets relationship between books table and prices table --
+  -- Sets relationship between department table and roles table --
   FOREIGN KEY (department_id)
   REFERENCES departments(id)
   ON DELETE SET NULL
