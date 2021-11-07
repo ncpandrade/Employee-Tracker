@@ -13,7 +13,7 @@ const questions = {
             type: "list",
             message: "What would you like to do?",
             name: "action",
-            choices: ["view departments", "view employees", "Exit"]
+            choices: ["view departments", "view employees", "view roles", "add a department", "Exit"]
         }
     ]
 }
@@ -29,7 +29,10 @@ function main() {
                     query.viewEmployees(main)
                     break;
                 case "view roles":
-                    viewRoles();
+                    query.viewRoles(main);
+                    break;
+                case "add a department":
+                    query.addDepartment(main);
                     break;
                 default:
                     process.exit(0);
