@@ -22,7 +22,7 @@ CREATE TABLE employees (
   last_name VARCHAR(30) NOT NULL,
   role_id INTEGER,
   manager_id Integer,
-  -- Sets relationship between books table and prices table --
+  -- Sets relationship between EMPLOYEES table and ROLES/DEPARTMENTS table --
   FOREIGN KEY (role_id)
   REFERENCES roles(id)
   ON DELETE SET NULL,
