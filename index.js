@@ -13,7 +13,7 @@ const questions = {
             type: "list",
             message: "What would you like to do?",
             name: "action",
-            choices: ["view departments", "view employees", "view roles", "add a department", "add a role", "add an employee", "Exit"]
+            choices: ["view departments", "view employees", "view roles", "add a department", "add a role", "add an employee", "update and employee", "Exit"]
         }
     ]
 }
