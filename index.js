@@ -15,13 +15,15 @@ const questions = {
             type: "list",
             message: "What would you like to do?",
             name: "action",
-            choices: ["view departments", "view employees", "view roles", "add a department", "add a role", "add an employee", "update an employee", "Exit"]
+            choices: ["view departments", "view employees", "view roles", "add a department", "add a role", "add an employee", "update an employee", "Exit"],
+            loop: false
         }
     ]
 }
 
 //call query method depending on selected user action
 function main() {
+    console.count()
     inquirer.prompt(questions.main)
         .then(({ action }) => {
             switch (action) {
