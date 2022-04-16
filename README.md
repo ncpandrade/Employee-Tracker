@@ -17,7 +17,7 @@ update connection.js with mysql credentials
 
 mysql shell: source db/db.sql
 
-## Acceptance Criteria
+## How it works
 WHEN I start the application
 
 THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
@@ -50,5 +50,5 @@ WHEN I choose to update an employee role
 
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 
-## Mock-Up Demo
-https://watch.screencastify.com/v/46gOrW0moCBgrUmuMAeI
+## Demo
+https://watch.screencastify.com/v/xomMBOildwmXqP766xYF
